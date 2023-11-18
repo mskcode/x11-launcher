@@ -1,0 +1,9 @@
+# -*- mode: yaml -*-
+# vim: ft=yaml
+#
+# https://clangd.llvm.org/config
+#
+
+CompileFlags:
+  Add:
+    - "-std=c++20"

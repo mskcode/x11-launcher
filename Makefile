@@ -33,3 +33,7 @@ $(OBJS): $(SRCS)
 clean:
 	@echo Removing $(OUT_DIR)...
 	@rm -fr $(OUT_DIR)
+
+.PHONY: watch
+watch:
+	while true; do $(MAKE) -q || $(MAKE); sleep 2; done
